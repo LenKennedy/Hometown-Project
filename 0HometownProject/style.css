@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgb(8, 46, 8);
+    box-shadow: 0 2px 8px black;
+}
+/*ALLOWS ME TO CHANGE THE COLOUR OF TEXT WITH SPAN IF NEEDED*/
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.logo span {
+    color: rgb(129, 9, 9);
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+.navbar button {
+    border: none;
+    background: rgb(129, 9, 9);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .navbar button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#home-section {
+    background: linear-gradient(rgb(8, 46, 8), white);
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+/* NOT SURE WHY HOME-IMG AND SIDE-IMG HAVE BEEN SPECIFIED - SIDE-IMG SEEMS REDUNDANT */
+.home-img {
+    width: 500px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+/*
+.side-img {
+    width: 500px;
+    margin-top: 100px;   
+} */
+
+.side-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px 30px 0 30px;
+}
+
+.head-1 {
+    color: #ffffff;
+    padding: 10px 10px;
+    background-color: rgb(8, 46, 8);;
+    border-radius: 3px;
+}
+
+.head-1 span {
+    color:  rgb(129, 9, 9);
+}
+
+.about-text {
+    text-align: start;
+    font-size: large;
+    padding-left: 20px;
+    border-left: 5px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .btn {
+    font-family: sans-serif;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: block;
+    color: #ffffff;
+    margin: 20px auto;
+    border: none;
+    background-color: rgb(8, 46, 8);;
+  }
+  
+  .btn:hover {
+    background-color: #167a13;
+    cursor: pointer;
+  }
+  
+  .home-divider {
+    width: 600px;
+    margin-top: 50px;
+  }
+
+  #activity-section {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(rgb(8, 46, 8), white);
+    text-align: center;
+    padding: 20px 0 0 0;
+    margin: 0;
+  }
+
+  /* CONTAINS THREE DIVS FOR EACH CARD */
+  
+  .activities {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .activities h2 {
+    font-size: medium;
+  }
+  
+  .activities p {
+    font-family: sans-serif;
+  }
+  .activities a {
+    font-family: sans-serif;
+    color: grey;
+  }
+  
+  .activities a:hover {
+    color: whitesmoke;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px black;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 8px black;
+    border: none;
+  }
+  .activity-img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 30%;
+    opacity: 1;
+  }
+  .activity-img:hover {
+    opacity: 0.5;
+  }
+
+#guide-section {
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(white, rgb(8, 46, 8));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide-card {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 300px;
+  width: 800px;
+  padding: 20px;
+  margin-top: 100px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.my-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.short-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.short-desc p {
+  font-style: italic;
+}
+
+.footer {
+  background-color: Gray;
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer p a{
+  font-family: sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+
+
+  
+  
+  
